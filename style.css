@@ -84,10 +84,10 @@ footer{background-color:grey;
     text-decoration: none;
     font-size: 15px;
   }
-  footer :hover{
-    text-decoration: underline;
-    opacity: 0.9;
-  }
+  footer a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
 
   .about {
   display: flex;
