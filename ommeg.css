@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* HEADER */
+
+header {
+  background-color: #0f172a;
+  padding: 20px 0;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.top-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.home {
+  margin: 0;
+}
+
+.home a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 800;
+}
+
+.logo-text {
+  color: #f1f5f9;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* NAV */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f5f9;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* OM MEG */
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.about-card {
+  background-color: #1e293b;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 900px;
+  flex-wrap: wrap;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.about-card img {
+  width: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
