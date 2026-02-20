@@ -76,20 +76,12 @@ nav ul {
 h4{
     color: #fcfcfc;
 }
-footer{background-color:grey;
-  color: white;
-  padding: 20px;
-  text-align: center;}
- 
-  footer a{
-    color: #fcfcfc;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  footer :hover{
-    text-decoration: underline;
-    opacity: 0.9;
-  }
+
+  
+footer a:hover {
+  opacity: 0.9;         /* hvis du ønsker samme effekt */
+}
+
 
   .top-title {
   display: flex;
@@ -234,13 +226,16 @@ footer{background-color:grey;
 .footer-section h4 {
   margin-bottom: 15px;
   color: #38bdf8;
+  text-decoration: none;
 }
 
 .footer-section p {
   margin: 6px 0;
   font-size: 14px;
   opacity: 0.85;
+  text-decoration: none;
 }
+
 
 .footer-section a {
   display: block;
