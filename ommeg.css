@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,17 +10,18 @@ body {
   color: #f1f5f9;
 }
 
-/* HEADER */
-
 header {
-  background-color: #0f172a;
-  padding: 20px 0;
-  border-bottom: 2px solid #38bdf8;
+  background: grey;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
 }
 
+
+
 .top-title {
-  text-align: center;
-  margin-bottom: 15px;
+  text-align: left;
+  padding: 25px 0 10px 0;
 }
 
 .home {
@@ -43,7 +49,7 @@ header {
   font-size: 18px;
 }
 
-/* NAV */
+
 
 nav ul {
   list-style: none;
@@ -66,7 +72,7 @@ nav ul li a:hover {
   color: #38bdf8;
 }
 
-/* OM MEG */
+
 
 .about-container {
   display: flex;
@@ -103,4 +109,48 @@ nav ul li a:hover {
 .about-text p {
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.site-footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 50px 20px;
+  margin-top: 80px;
+  border-top: 3px solid #38bdf8; /* Rammen */
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.footer-section a {
+  display: block;
+  margin: 6px 0;
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
 }
