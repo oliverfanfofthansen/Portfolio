@@ -42,7 +42,7 @@ header {
   width: 100%;
 }
 
-/* GRID: 4 x 2 */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -52,10 +52,10 @@ header {
   justify-items: center;
 }
 
-/* FLIP CARD */
+
 .flip-card {
   width: 260px;
-  height: 220px; /* litt høyere for scroll */
+  height: 220px; 
   perspective: 1000px;
 }
 
@@ -81,7 +81,7 @@ header {
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* FRONT */
+
 .flip-card-front {
   background-color: grey;
   display: flex;
@@ -100,16 +100,16 @@ header {
   margin-bottom: 10px;
 }
 
-/* BACK – SCROLL FIX */
+
 .flip-card-back {
   background-color: #38bdf8;
   color: #0f172a;
   transform: rotateY(180deg);
   padding: 16px;
-  overflow-y: auto; /* 👈 SCROLL */
+  overflow-y: auto; 
 }
 
-/* scrollbar – optional men clean */
+
 .flip-card-back::-webkit-scrollbar {
   width: 6px;
 }
@@ -174,7 +174,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -185,4 +185,52 @@ header {
   .card-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.site-footer {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 50px 20px;
+  margin-top: 80px;
+  border-top: 3px solid #38bdf8; /* Rammen */
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer-section p {
+  margin: 6px 0;
+  font-size: 14px;
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+
+.footer-section a {
+  display: block;
+  margin: 6px 0;
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
 }
