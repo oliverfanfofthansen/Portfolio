@@ -61,10 +61,18 @@
     <img src="images/Oliver 4.1.jpg" alt="gjenganger bilde av meg">
     <p>Vi tok flere bilder også redigerte i photoshop for å få det til å se ut som at det er flere av meg der.</p>
   </div>
-  <div class="polaroid" onclick="openModal(this)">
-    <img src="images/ørret framside guide.png" alt="framside av ørret guide">
-    <p>Vi lagde ett magasin om valgfritt tema og da valgte jeg "ørreten, en guide for deg som vil bli proff ørretfisker"</p>
-  </div>
+  <div class="polaroid" onclick="window.open('pdfs/orret guiden final.pdf', '_blank')" style="cursor: pointer;">
+  <img src="images/orret framside guide.png" alt="framside av ørret guide">
+  <p>Vi lagde ett magasin om valgfritt tema og da valgte jeg "ørreten, en guide for deg som vil bli proff ørretfisker"</p>
+</div>
+  
+  <div class="polaroid polaroid-video" onclick="openVideoModal()">
+  <video class="vid-thumb" muted preload="metadata">
+    <source src="videos/cinematic_overwatch_intro2.mp4" type="video/mp4">
+  </video>
+  <div class="play-icon">▶</div>
+  <p>Cinematic Overwatch vignett-intro jeg redigerte</p>
+</div>
 </div>
 
 
@@ -106,5 +114,11 @@
 
 </footer>
 <script src="script.js"></script>
+<div id="video-modal" style="display:none; position:fixed; z-index:2000; inset:0; background:rgba(10,15,25,0.95); align-items:center; justify-content:center;">
+  <span class="close-btn" onclick="closeVideoModal()">×</span>
+  <video id="modal-video" controls style="max-width:92vw; max-height:85vh; border-radius:10px;">
+    <source src="images/cinematic overwatch intro2.mp4" type="video/mp4">
+  </video>
+</div>
 </body>
 </html>

@@ -24,3 +24,23 @@ function openModal(element) {
 function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
+
+function openVideoModal() {
+  const modal = document.getElementById("video-modal");
+  const video = document.getElementById("modal-video");
+  modal.style.display = "flex";
+  video.play();
+}
+
+function closeVideoModal() {
+  const modal = document.getElementById("video-modal");
+  const video = document.getElementById("modal-video");
+  modal.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+}
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") closeVideoModal();
+});
+
