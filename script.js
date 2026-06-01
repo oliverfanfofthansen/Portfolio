@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.body.insertAdjacentHTML('beforeend', modalHTML);
 });
 
-// ÅPNER BILDEMODAL (Polaroidene)
+
 function openModal(element) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("largeImage");
@@ -21,7 +21,7 @@ function openModal(element) {
   }
 }
 
-// LUKKER BILDEMODAL
+
 function closeModal() {
   const modal = document.getElementById("imageModal");
   if (modal) {
@@ -29,7 +29,7 @@ function closeModal() {
   }
 }
 
-// ÅPNER VIDEOMODAL (Podcasten)
+
 function openVideoModal() {
   const modal = document.getElementById("video-modal");
   const video = document.getElementById("modal-video");
@@ -39,7 +39,6 @@ function openVideoModal() {
   }
 }
 
-// LUKKER VIDEOMODAL
 function closeVideoModal() {
   const modal = document.getElementById("video-modal");
   const video = document.getElementById("modal-video");
@@ -50,7 +49,7 @@ function closeVideoModal() {
   }
 }
 
-// LUKK MED ESCAPE (Lukker både video og bilder hvis de er åpne)
+
 document.addEventListener("keydown", function(e) {
   if (e.key === "Escape") {
     closeVideoModal();
